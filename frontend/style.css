@@ -125,10 +125,25 @@
 }
 
 .home .home-profile {
-    width: 20rem;
-    height: 20rem;
+    width: 28rem;
+    height: 28rem;
     border-radius: 50%;
-    background-color: red;
+    overflow: hidden;
+    background-color: #bfa869;
+    animation: imgfloat 7s ease-in-out infinite;
+}
+
+.image img {
+    width: 500px;
+    height: 500px;
+    object-fit: cover;
+}
+
+@keyframes imgfloat {
+    50% {
+        transform: translateY(10px);
+        border-radius: 40% 45% 40% 45%;
+    }
 }
 
 .home .home-content {
