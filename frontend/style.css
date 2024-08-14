@@ -119,6 +119,7 @@
 
 .home {
     padding-top: 4rem;
+    padding-left: 2rem;
     display: flex;
     width: 90%;
     justify-content: space-around;
