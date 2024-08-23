@@ -8,5 +8,5 @@ document.addEventListener('scroll', function() {
         if (element.getBoundingClientRect().top < window.innerHeight) {
             element.classList.add('visible');
         }
-    });
+    }); 
 });
