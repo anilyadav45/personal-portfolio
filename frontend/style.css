@@ -40,15 +40,29 @@
     }
 }
 
-.fade-in {
+/* .fade-in {
     opacity: 0;
     transition: opacity 1.5s ease-in-out;
 }
 
 .fade-in.visible {
     opacity: 1;
-}
+} */
 
+
+/* animate while scroll  */
+
+.animate-on-scroll {
+    opacity: 0;
+    transform: translateY(50px);
+    transition: opacity 1s ease-out, transform 1s ease-out;
+  }
+  
+  .animate-on-scroll.visible {
+    opacity: 1;
+    transform: translateY(0);
+  }
+  
 
 /* navbar ------------------------------------------------- */
 
@@ -373,7 +387,7 @@
 .services-box .box{
     width: 300px;
     height: 300px;
-    background-color: var(--first-color);
+    background-color: var(--third-color);
     margin-right: 3rem;
     border-radius: 5px;
     display: flex;
@@ -405,30 +419,91 @@
 /* -------------------------Contact me ---------------------------------------- */
 
 .contact{
-    margin-top: 11rem;
+   margin-top: 5rem;
     width: 100%;
     display: flex;
     justify-content: space-around;
 }
 .contact .contact-me{
     width: 40%;
-    background-color: var(--second-color);
+    background-color: var(--third-color);
     height: 20rem;
     border-radius: 4px;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    color: var(--color-white);
+}
+.contact .contact-me:hover{
+    background-color: var(--color-white);
+    border: 1px solid grey;
+    color: #000;
 }
 .contact .contact-me span {
     padding-top: 2rem;
 }
 .contact .send-info{
     width: 40%;
-    background-color: var(--second-color);
+    /* background-color: var(--second-color); */
     height: 20rem;
     border-radius: 4px;
+    display: flex;
+    justify-content: center;
     
 }
+.contact .send-info form {
+    width: 100%;
+}
+.send-info .form-name {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+.send-info .form-name input{
+width: 45%;
+height: 3rem;
+font-size: 1rem;
+border: 2px solid grey;
+border-radius: 5px;
+}
+.send-info .msg textarea{
+    margin-top: 1.1rem;
+    width: 100%;
+    height: 11rem;
+    border: 2px solid grey;
+    border-radius: 5px;
+}
+.send-info .btn{
+    position: relative;
+    top: 10px;
+    width: 100%;
+    display: flex;
+    justify-content: start;
+}
+.send-info #submit{
+    width: 8rem;
+    height: 3rem;
+    background-color: var(--third-color);
+    border-radius: 6px;
+    border: none;
+    cursor: pointer;
+    color: var(--color-white);
+    font-size: 1rem;
+    cursor: pointer;
+}
+.send-info #submit:hover{
+    background-color: var(--color-white);
+    color: #000;
+    border: 1px solid grey;
+}
+/* place holder centered */
+.send-info form input::placeholder{
+  text-align: center;
+}
+.send-info textarea::placeholder{
+    text-align: center;
+}
+
 
 /* ----------------------------Contact me ------------------------------------------- */

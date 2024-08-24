@@ -1,12 +1,35 @@
 //SOME COOLS FEATURES 
 
-document.addEventListener('scroll', function() {
-    const scrollPosition = window.scrollY;
-    const elements = document.querySelectorAll('.fade-in');
+// document.addEventListener('scroll', function() {
+//     const scrollPosition = window.scrollY;
+//     const elements = document.querySelectorAll('.fade-in');
 
-    elements.forEach(element => {
-        if (element.getBoundingClientRect().top < window.innerHeight) {
-            element.classList.add('visible');
-        }
-    }); 
-});
+//     elements.forEach(element => {
+//         if (element.getBoundingClientRect().top < window.innerHeight) {
+//             element.classList.add('visible');
+//         }
+//     }); 
+// });
+
+//animate while scrolling
+document.addEventListener("scroll", function() {
+    const scrollElements = document.querySelectorAll(".animate-on-scroll");
+  
+    scrollElements.forEach((el) => {
+      const elementInView = isElementInViewport(el);
+      if (elementInView) {
+        el.classList.add("visible");
+      } else {
+        el.classList.remove("visible");
+      }
+    });
+  });
+  
+  function isElementInViewport(el) {
+    const rect = el.getBoundingClientRect();
+    return (
+      rect.top <= (window.innerHeight || document.documentElement.clientHeight) &&
+      rect.bottom >= 0
+    );
+  }
+  
