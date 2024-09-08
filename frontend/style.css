@@ -35,6 +35,7 @@
     .container {
         width: 100%;
     }
+
     .projects {
         grid-template-columns: 1fr;
     }
@@ -56,13 +57,13 @@
     opacity: 0;
     transform: translateY(50px);
     transition: opacity 1s ease-out, transform 1s ease-out;
-  }
-  
-  .animate-on-scroll.visible {
+}
+
+.animate-on-scroll.visible {
     opacity: 1;
     transform: translateY(0);
-  }
-  
+}
+
 
 /* navbar ------------------------------------------------- */
 
@@ -125,7 +126,7 @@
 
 .nav-bar #download-cv:hover {
     background-color: var(--third-color);
-    color:var(--color-white);
+    color: var(--color-white);
     cursor: pointer;
 }
 
@@ -200,18 +201,23 @@
     0% {
         content: "Software Engineer";
     }
+
     20% {
         content: "Frontend Developer";
     }
+
     40% {
         content: "Backend Developer";
     }
+
     60% {
         content: "Fullstack Developer";
     }
+
     80% {
         content: "Web Developer";
     }
+
     100% {
         content: "Software Engineer";
     }
@@ -291,7 +297,98 @@
 
 /* home------------------------------------------------- */
 
+/* About sectin  */
 
+/* About Me Section Styles */
+.about-section {
+    padding: 60px 0;
+    background-color: #f4f4f4;
+}
+
+.section-title {
+    text-align: center;
+    font-size: 32px;
+    margin-bottom: 40px;
+}
+
+.about-box {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.about-box h3 {
+    font-size: 24px;
+    margin-bottom: 15px;
+}
+
+.about-box ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.about-box ul li {
+    font-size: 16px;
+    margin-bottom: 10px;
+}
+
+.about-box p {
+    font-size: 16px;
+    margin-bottom: 20px;
+}
+
+@media (min-width: 768px) {
+    .about-box {
+        height: 300px;
+    }
+}
+
+/* About section   */
+.about-section {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    padding: 20px;
+  }
+  
+  .bio {
+    width: 45%;
+  }
+  
+  .skills {
+    width: 45%;
+  }
+  
+  .skills-icons {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+  }
+  
+  .skills-icons i {
+    font-size: 40px;
+    padding: 10px;
+    color: #333;
+  }
+  
+  .skills-icons i:hover {
+    color: #007bff;
+    transition: color 0.3s ease-in-out;
+  }
+  
+  .about-section h2, .about-section h3 {
+    margin-bottom: 15px;
+  }
+  
+  .about-section p {
+    line-height: 1.6;
+    margin-bottom: 10px;
+  }
+  
+/* About section  */
 /* -------------projects------------------------------ */
 
 .projects {
@@ -300,7 +397,7 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    
+
 }
 
 .projects .proj-con {
@@ -312,12 +409,13 @@
 
 .projects span {
     text-align: center;
-    font-size: 2.4rem;
-    font-weight: bold;
-    color: var(--first-color);
+
+    font-size: 32px;
+    margin-bottom: 40px;
+
 }
 
-.project{
+.project {
     width: 300px;
     height: 300px;
     border-radius: 5px;
@@ -331,6 +429,7 @@
     overflow: hidden;
     transition: filter 0.3s ease;
 }
+
 .blur-container {
     position: absolute;
     width: 100%;
@@ -338,11 +437,13 @@
     border-radius: 5px;
     transition: filter 0.3s ease;
 }
-.blur-container:hover{
+
+.blur-container:hover {
     cursor: pointer;
     filter: blur(4px);
 }
-.project .showmore{
+
+.project .showmore {
     width: 10rem;
     height: 3rem;
     background-color: var(--third-color);
@@ -356,7 +457,8 @@
     opacity: 0;
     transition: opacity 0.3s ease;
 }
-.project:hover .showmore{
+
+.project:hover .showmore {
     opacity: 0.9;
     cursor: pointer;
 }
@@ -366,16 +468,18 @@
 /* -------------projects------------------------------ */
 
 /* ---------------------services------------------------------------ */
-.service{
+.service {
     margin-top: 4%;
 }
-.service h1{
- text-align: center;
- font-size: 2.4rem;
- font-weight: bold;
- color: var(--first-color);
+
+.service h1 {
+    text-align: center;
+    font-size: 2.4rem;
+    font-weight: bold;
+    color: var(--first-color);
 }
-.services-box{
+
+.services-box {
     margin-top: 3rem;
     display: flex;
     justify-content: space-between;
@@ -384,7 +488,8 @@
     padding-right: 4rem;
 
 }
-.services-box .box{
+
+.services-box .box {
     width: 300px;
     height: 300px;
     background-color: var(--third-color);
@@ -396,12 +501,14 @@
     justify-content: space-around;
     box-shadow: 0 0 5px var(--text-second-color);
     color: var(--color-white);
-    
+
 }
-.services-box .box p{
+
+.services-box .box p {
     width: 200px;
 }
-.box #read-more{
+
+.box #read-more {
     width: 8rem;
     height: 2rem;
     background-color: var(--third-color);
@@ -409,22 +516,25 @@
     border: none;
     cursor: pointer;
     color: var(--color-white);
-   
+
 }
-.box i{
+
+.box i {
     font-size: 3rem;
 }
+
 /* ---------------------services------------------------------------ */
 
 /* -------------------------Contact me ---------------------------------------- */
 
-.contact{
-   margin-top: 5rem;
+.contact {
+    margin-top: 5rem;
     width: 100%;
     display: flex;
     justify-content: space-around;
 }
-.contact .contact-me{
+
+.contact .contact-me {
     width: 40%;
     background-color: var(--third-color);
     height: 20rem;
@@ -435,53 +545,62 @@
     justify-content: center;
     color: var(--color-white);
 }
-.contact .contact-me:hover{
+
+.contact .contact-me:hover {
     background-color: var(--color-white);
     border: 1px solid grey;
     color: #000;
 }
+
 .contact .contact-me span {
     padding-top: 2rem;
 }
-.contact .send-info{
+
+.contact .send-info {
     width: 40%;
     /* background-color: var(--second-color); */
     height: 20rem;
     border-radius: 4px;
     display: flex;
     justify-content: center;
-    
+
 }
+
 .contact .send-info form {
     width: 100%;
 }
+
 .send-info .form-name {
     width: 100%;
     display: flex;
     justify-content: space-between;
 }
-.send-info .form-name input{
-width: 45%;
-height: 3rem;
-font-size: 1rem;
-border: 2px solid grey;
-border-radius: 5px;
+
+.send-info .form-name input {
+    width: 45%;
+    height: 3rem;
+    font-size: 1rem;
+    border: 2px solid grey;
+    border-radius: 5px;
 }
-.send-info .msg textarea{
+
+.send-info .msg textarea {
     margin-top: 1.1rem;
     width: 100%;
     height: 11rem;
     border: 2px solid grey;
     border-radius: 5px;
 }
-.send-info .btn{
+
+.send-info .btn {
     position: relative;
     top: 10px;
     width: 100%;
     display: flex;
     justify-content: start;
 }
-.send-info #submit{
+
+.send-info #submit {
     width: 8rem;
     height: 3rem;
     background-color: var(--third-color);
@@ -492,16 +611,19 @@ border-radius: 5px;
     font-size: 1rem;
     cursor: pointer;
 }
-.send-info #submit:hover{
+
+.send-info #submit:hover {
     background-color: var(--color-white);
     color: #000;
     border: 1px solid grey;
 }
+
 /* place holder centered */
-.send-info form input::placeholder{
-  text-align: center;
+.send-info form input::placeholder {
+    text-align: center;
 }
-.send-info textarea::placeholder{
+
+.send-info textarea::placeholder {
     text-align: center;
 }
 
