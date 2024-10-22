@@ -20,4 +20,4 @@ document.addEventListener("scroll", function() {
       rect.bottom >= 0
     );
   }
-  
+

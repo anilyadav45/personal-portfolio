@@ -189,7 +189,8 @@
     font-size: 2rem;
     margin-bottom: 1rem;
 }
-#animated-bio{
+
+#animated-bio {
     /* background-color: red; */
     display: flex;
 }
@@ -426,21 +427,24 @@
 .projects .proj-con {
     margin-top: 3rem;
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
     width: 90%;
+    padding-left: 5%;
+    padding-right: 4rem;
+
 }
 
-.projects span {
+.projects h1 {
+
     text-align: center;
-
-    font-size: 32px;
-    margin-bottom: 40px;
-
+    font-size: 2.4rem;
+    font-weight: bold;
+    color: var(--first-color);
 }
 
 .project {
-    width: 300px;
-    height: 300px;
+    width: 20rem;
+    height: 20rem;
     border-radius: 5px;
     box-shadow: 0 0 7px var(--third-color);
     display: flex;
@@ -513,8 +517,8 @@
 }
 
 .services-box .box {
-    width: 300px;
-    height: 300px;
+    width: 20rem;
+    height: 20rem;
     background-color: var(--third-color);
     margin-right: 3rem;
     border-radius: 5px;
