@@ -701,34 +701,3 @@ body h2 {
     text-align: center;
     padding-bottom: 5rem;
 }
-
-/* making it responsive for mobile view  */
-
-@media (max-width: 428px) {
-    #about-section{
-        display: none;
-    }
-    #service-section{
-        display: none;
-    }
-    #project-section{
-        display: none;
-    }
-    #contact-section{
-        display: none;
-    }
-    .nav-bar{
-        background-color: red;
-    }
-    .nav-bar #nav-list{
-        /* display: none; */
-        background-color: rgb(125, 155, 125);
-        display: flex;
-        flex-direction: column;
-        margin-top: 5rem;
-    }
-    #nav-list li{
-        padding-top: 5px;
-    }
-
-}
